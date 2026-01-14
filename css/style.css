@@ -4,8 +4,7 @@
   min-width: 1200px;
   height: 475px;
   background: url(../img/trifold.png) center/cover;
-  color: #fff;
-position: relative;
+  position: relative;
 }
 #banner .container{
   display: flex;
@@ -16,11 +15,13 @@ position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-  #banner h1{
+#banner h1{
+  color: #fff;
   font-family: "Samsung Bold","Noto Sans Korean";
   font-size: 40px;
 }
 #banner h2{
+  color: #fff;
   font-family: "Samsung Medium","Noto Sans Korean";
   font-weight: normal;
   font-size: 30px;
@@ -30,6 +31,7 @@ position: relative;
   padding-left: 6px;
 }
 #banner p{
+  color: #fff;
   font-family: "Samsung Regular","Noto Sans Korean";
   font-size: 16px;
 }
@@ -225,13 +227,14 @@ white-space: nowrap;
 
 #banner_3 .container .txt .left{
   font-family: 'Samsung Bold';
-  color: #222;
 }
 #banner_3 .container .txt .left h1{
+  color: #222;
   font-size: 50px;
   margin-bottom: 10px;
 }
 #banner_3 .container .txt .left h2{
+  color: #222;
   font-size: 35px;
   font-family: 'Samsung Medium';
   font-weight: 300;
@@ -386,7 +389,6 @@ justify-content: center;
 }
 #popup_card .container .txtcard .card a strong{
   font: bold 22px 'Samsung Bold';
-  color: #111;
   padding: 0 31px;
   margin-bottom: 10px;
 }
