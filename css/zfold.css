@@ -1,0 +1,67 @@
+/* banner */
+body{
+  width: 1900px;
+}
+#banner{
+width: 100%;
+}
+
+#banner img{
+  width: 1200px;
+  height: 660px;
+}
+
+#banner .container{
+  width: 100%;
+  padding: 35px 180px 0;
+}
+
+#banner .container .title h1{
+  font-size: 40px;
+  color: #222;
+}
+#banner .container .title p{
+  font-size: 20px;
+  font-family: 'Samsung Medium';
+  color: #444;
+}
+#banner .container .banner_box{
+  display: flex;
+  gap: 60px;
+}
+#banner .list{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#banner .list .option ul{
+  display: flex;
+  flex-direction: column;
+}
+#banner .list .option ul li{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+#banner .list .option ul li:nth-child(3) h3:nth-child(2){
+  margin-left: 28px;
+  letter-spacing: -1%;
+}
+#banner .list .option ul li:nth-child(2) h3:nth-child(2){
+margin-left: 4px;
+}
+
+
+
+
+
+
+
+
+/* footer.css */
+#footer{
+  background-color: #eee;
+}
+body #footer .container .top_foot{
+  border-top: none;
+}
