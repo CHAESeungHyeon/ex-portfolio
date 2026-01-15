@@ -52,7 +52,10 @@
 }
 #title_banner .container .list li:first-child{
 font-weight: bold;
-border-bottom: 2px solid #333;
+text-decoration-line: underline;
+  text-decoration-color: #333;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 
@@ -471,6 +474,7 @@ height: 366px;
   font-family: 'Samsung Bold';
   font-size: 30px;
   padding-bottom: 70px;
+  color: #666;
 }
 
 #popup_card .container .txtcard{
