@@ -4,11 +4,6 @@
   min-width: 1200px;
 }
 
-#banner img{
-  width: 1200px;
-  height: 660px;
-}
-
 #banner .container{
   width: 100%;
   min-width: 1200px;
@@ -20,42 +15,31 @@
   position: relative;
 }
 
-#banner .container .title h1{
-  font-size: 60px;
-  color: #222;
-  margin-bottom: 15px;
-}
-#banner .container .title p{
-  font-size: 30px;
-  font-family: 'Samsung Medium';
-  color: #444;
-  margin-bottom: 20px;
-  text-align: center;
-}
 #banner .container .banner_box{
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   gap: 60px;
   width: 100%;
-  justify-content: center;
-  position: relative;
-  height: 950px;
+  height: 900px;
+  /* overflow-x: hidden; */
 }
 
 #banner .box{
   background-color: #f4f4f4;
-  border-radius: 20px;
-  width: 1200px;
-  height: 800px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 #banner .box img{
-  margin-top: 140px;
+  width: 1200px;
+  margin-top: 40px;
 }
 #banner .box ul{
-position: absolute;
-right: 100px;
-top: 100px;
+  position: absolute;
+  right: 400px;
+  top: 30px;
 }
 
 #banner .box ul li{
@@ -76,7 +60,7 @@ margin-left: 50px;
 #banner .box ul li p{
   font-size: 25px;
 }
-#banner .box ul li img{
+#banner .box ul li > img{
   width: 57px;
   height: 63px;
   margin-top: 0;
@@ -85,7 +69,7 @@ margin-left: 50px;
 
 #banner .box ul .button{
   position: absolute;
-  right: -10%;
+  right: -3%;
   bottom: -60%;
 }
 
@@ -103,80 +87,31 @@ margin-left: 50px;
   cursor: pointer;
 }
 
+/* ========================== */
 #banner .list{
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-  position: absolute;
-  top: 78%;
-  left: 19%;
-}
-
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  }
 
 #banner .list .option{
-  margin-top: 70px;
-display: flex;
-flex-direction: column;
-gap: 25px;
-position: absolute;
-}
-
-#banner .list .option p{
-  font-size: 22px;
-  font-family: 'Samsung Medium';
-}
-
-#banner .list .option ul{
   display: flex;
-  gap: 10px;
+  flex-direction: column;
 }
-
-
-#banner .list .option ul li a{
-  display: flex;
-  align-items: center;
-}
-
-
-#banner .list .option ul li a h3:first-child{
-text-align: left;
-}
-#banner .list .option ul li a h3:nth-child(2){
-text-align: left;
-}
-#banner .list .option ul li a p{
-text-align: right;
-}
-
-#banner .list .option ul li a h3:not(:last-of-type)::after{
-content: "";
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 16px;
-  background: #bbb;
-}
-
 #banner .list .option ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
-
 #banner .list .option li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 16px 20px;
-  border: 1px solid #333;
-  border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
+  border: 1px solid #666;
+  border-radius: 13px;
 }
-
 #banner .list .option li a h3 {
   font-size: 16px;
   font-weight: 500;
@@ -200,14 +135,22 @@ content: "";
   height: 14px;
   background: #666;
 }
-
+/* ============== */
+#banner .list .option > p{
+  font-size: 22px;
+  font-family: 'Samsung Medium';
+  margin-bottom: 10px;
+}
 
 #banner .list .option li a p {
   margin-left: 20px;
   margin-bottom: 4px;
-  font-size: 16px;
   font-weight: 400;
   letter-spacing: 1px;
+  color: #666;
+  font-size: 18px;
+  font-family: 'Samsung Medium' ;
+  white-space: nowrap;
 }
 
 #banner .list .option li a h3:nth-child(1){
@@ -216,30 +159,17 @@ content: "";
 }
 #banner .list .option li a h3:nth-child(2){
   font-size: 20px;
-color: #666;
+  color: #666;
 }
-#banner .list .option li a p{
-font-size: 18px;
-color: #666;
-font-family: 'Samsung Medium' ;
-white-space: nowrap;
-}
-
-
-#banner .list .color_option{
-  margin-top: 70px;
-  position: absolute;
-  transform: translateX(1000px);
-}
+/* =========== */
 #banner .color_option p{
   font-size: 22px;
   font-family: 'Samsung Medium';
-margin-right: 40px;
 }
 #banner .color_option ul{
-display: flex;
-gap: 36px;
-margin-top: 40px;
+  display: flex;
+  gap: 36px;
+  margin-top: 36px;
 }
 #banner .color_option ul li{
   width: 40px;
@@ -565,6 +495,9 @@ color: #333;
   text-align: left;
   font-family: 'Samsung Regular';
   font-weight: 500;
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 15px;
 }
 
 
@@ -576,7 +509,7 @@ color: #333;
 }
 
 #compare .container{
-  padding: 65px 0;
+  padding: 70px 0;
 }
 
 #compare .container h1{
@@ -727,6 +660,8 @@ font-size: 15px;
 /* footer.css */
 #footer{
   background-color: #eee;
+  width: 100%;
+  min-width: 1200px;
 }
 body #footer .container .top_foot{
   border-top: none;
